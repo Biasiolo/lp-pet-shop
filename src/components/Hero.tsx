@@ -17,8 +17,8 @@ const Hero = () => {
         style={{ backgroundImage: `url(${heroImage})` }}
       ></div>
       <div className="relative z-10 text-center max-w-4xl p-8 rounded-3xl bg-neutral-500/30 backdrop-blur-lg border border-white/20 shadow-xl mx-auto">
-  <h1 className="text-5xl md:text-7xl font-bold text-black mb-6 drop-shadow-lg">
-    PET CARE
+  <h1 className="text-5xl md:text-7xl font-extrabold text-indigo-800 mb-6 drop-shadow-lg">
+    PET'S PLACE
   </h1>
   <p className="text-3xl md:text-3xl text-stone-300 font-bold mb-12 drop-shadow-md max-w-3xl mx-auto">
     O melhor cuidado para o seu amigo! 
@@ -31,7 +31,7 @@ const Hero = () => {
       variant="hero" 
       size="lg"
       onClick={() => scrollToSection('agendamento')}
-      className="text-lg px-8 py-4"
+      className="text-lg text-black px-8 py-4"
     >
       Agendar Banho
     </Button>

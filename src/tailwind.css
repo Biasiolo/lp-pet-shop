@@ -6,8 +6,18 @@
 All colors MUST be HSL.
 */
 
+@font-face {
+  font-family: 'American Captain';
+  src: url('/utils/fonts/american_capitan/American Captain.woff2') format('woff2'),
+       url('/utils/fonts/american_capitan/American Captain.woff') format('woff'),
+       url('/utils/fonts/american_capitan/American Captain.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 @layer base {
   :root {
+    --font-title: 'American Captain', sans-serif;
     --background: 200 20% 98%;
     --foreground: 200 50% 15%;
 
@@ -38,7 +48,7 @@ All colors MUST be HSL.
 
     /* Custom Pet Shop Colors */
     --pet-blue: 200 95% 55%;
-    --pet-green: 140 60% 60%;
+    --pet-green: 150 50% 20%;
     --pet-orange: 25 95% 65%;
     --pet-light-blue: 200 80% 90%;
     --pet-light-green: 140 50% 90%;
@@ -117,4 +127,8 @@ All colors MUST be HSL.
   body {
     @apply bg-background text-foreground;
   }
+}
+
+body {
+  font-family: 'American Captain', sans-serif;
 }

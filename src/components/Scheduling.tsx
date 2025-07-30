@@ -11,6 +11,7 @@ import { CalendarIcon, Clock, User, Phone, Dog } from "lucide-react";
 import { format } from "date-fns";
 import { cn } from "@/lib/utils";
 import { ptBR } from "date-fns/locale";
+import dogImageG from '../assets/cao3.jpg';
 
 const Scheduling = () => {
   const [date, setDate] = useState<Date>();
@@ -76,13 +77,14 @@ const Scheduling = () => {
   };
 
   return (
-    <section id="agendamento" className="py-20 bg-muted/30">
+    <section id="agendamento" className="py-20 bg-blue-300/30 relative py-20 bg-muted/30 bg-cover bg-center"
+      style={{ backgroundImage: `url(${dogImageG})` }}>
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-foreground mb-4">
+        <div className="text-center mb-16 p-8 rounded-3xl bg-neutral-500/30 backdrop-blur-lg border border-white/20 shadow-xl max-w-4xl mx-auto">
+          <h2 className="text-4xl font-bold text-white mb-4">
             Agende o Banho do seu Pet
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg text-white max-w-2xl mx-auto">
             Escolha a data, horário e nos conte sobre seu pet. Entraremos em contato para confirmar!
           </p>
         </div>

@@ -1,6 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Droplets, Scissors, Sparkles, Heart } from "lucide-react";
+import dogImage from '../assets/cao12.jpg';
 
 const Services = () => {
   const services = [
@@ -16,7 +17,7 @@ const Services = () => {
       title: "Tosa Higiênica",
       description: "Tosa nas áreas íntimas para melhor higiene do seu pet",
       price: "R$ 25 - R$ 45",
-      details: "Essencial para a saúde e conforto"
+      details: "Essencial para a saúde, conforto e bem estar"
     },
     {
       icon: Sparkles,
@@ -41,13 +42,21 @@ const Services = () => {
   };
 
   return (
-    <section id="servicos" className="py-20 bg-muted/30">
-      <div className="container mx-auto px-4">
+    <section
+      id="servicos"
+      className="relative py-20 bg-muted/30 bg-cover bg-center"
+      style={{ backgroundImage: `url(${dogImage})` }}
+    >
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-white/30 backdrop-blur-sm z-0" />
+
+      {/* Conteúdo */}
+      <div className="relative z-10 bg-transparent container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-foreground mb-4">
+          <h2 className="text-5xl font-bold text-white mb-4 drop-shadow-md">
             Nossos Serviços
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg text-white/80 max-w-2xl mx-auto drop-shadow-sm">
             Oferecemos uma gama completa de serviços para deixar seu pet limpo, bonito e feliz.
           </p>
         </div>
@@ -58,7 +67,7 @@ const Services = () => {
             return (
               <Card 
                 key={index} 
-                className="bg-card shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-soft)] transition-all duration-300 hover:-translate-y-2 border-border/50"
+                className="bg-white/80 backdrop-blur-md shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-soft)] transition-all duration-300 hover:-translate-y-2 border border-white/30"
               >
                 <CardHeader className="text-center pb-2">
                   <div className="w-16 h-16 bg-gradient-to-br from-pet-blue to-pet-green rounded-full flex items-center justify-center mx-auto mb-4">
@@ -72,7 +81,7 @@ const Services = () => {
                   <p className="text-sm text-pet-green font-medium">{service.details}</p>
                   <Button 
                     variant="whatsapp" 
-                    className="w-full"
+                    className="w-full text-black"
                     onClick={() => openWhatsApp(service.title)}
                   >
                     Solicitar Orçamento
