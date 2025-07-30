@@ -18,7 +18,7 @@ const Contact = () => {
     <section id="contato" className="py-20 bg-muted/30 relative py-20 bg-muted/30 bg-cover bg-center"
       style={{ backgroundImage: `url(${dogImageW})` }}>
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16 p-8 rounded-3xl bg-neutral-200/30 backdrop-blur-lg border border-white/20 shadow-xl max-w-4xl mx-auto">
+        <div className="text-center mb-16 p-8  mx-auto">
           <h2 className="text-4xl font-bold text-black mb-4">
             Entre em Contato
           </h2>
@@ -97,7 +97,7 @@ const Contact = () => {
             </Card>
 
             {/* Diferenciais */}
-            <Card className="bg-gradient-to-br from-pet-light-blue to-pet-light-green border-border/50">
+            <Card className="bg-card shadow-[var(--shadow-card)] border-border/50">
               <CardHeader>
                 <CardTitle className="text-2xl text-foreground flex items-center gap-2">
                   <Heart className="w-6 h-6 text-pet-blue" />
