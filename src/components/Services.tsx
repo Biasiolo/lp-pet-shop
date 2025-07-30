@@ -81,7 +81,7 @@ const Services = () => {
                   <p className="text-sm text-pet-green font-medium">{service.details}</p>
                   <Button 
                     variant="whatsapp" 
-                    className="w-full text-black"
+                    className="w-full text-black font-bold"
                     onClick={() => openWhatsApp(service.title)}
                   >
                     Solicitar Orçamento
