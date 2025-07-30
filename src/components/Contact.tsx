@@ -1,7 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Phone, MessageCircle, Instagram, Clock, Heart } from "lucide-react";
-import dogImageW from '../assets/cao1.jpg';
+import dogImageW from '../assets/cao4.jpg';
 
 const Contact = () => {
   const openWhatsApp = () => {
@@ -18,11 +18,11 @@ const Contact = () => {
     <section id="contato" className="py-20 bg-muted/30 relative py-20 bg-muted/30 bg-cover bg-center"
       style={{ backgroundImage: `url(${dogImageW})` }}>
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-white mb-4">
+        <div className="text-center mb-16 p-8 rounded-3xl bg-neutral-200/30 backdrop-blur-lg border border-white/20 shadow-xl max-w-4xl mx-auto">
+          <h2 className="text-4xl font-bold text-black mb-4">
             Entre em Contato
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg text-neutral-700 max-w-2xl mx-auto">
             Estamos sempre prontos para atender você e seu pet com o carinho que vocês merecem!
           </p>
         </div>

@@ -28,7 +28,7 @@ const Products = () => {
     {
       id: 2,
       name: "Coleira Antipulgas",
-      description: "Proteção duradoura contra pulgas e carrapatos",
+      description: "Proteção duradoura e segura contra pulgas e carrapatos",
       price: 35.50,
       category: "Saúde",
       image: "🎀"
@@ -36,7 +36,7 @@ const Products = () => {
     {
       id: 3,
       name: "Ração Premium 15kg",
-      description: "Ração super premium para cães adultos",
+      description: "Pacote ração super premium para cães adultos e filhotes",
       price: 120.00,
       category: "Alimentação",
       image: "🥘"
@@ -60,7 +60,7 @@ const Products = () => {
     {
       id: 6,
       name: "Petisco Natural",
-      description: "Petiscos naturais sem conservantes artificiais",
+      description: "Deliciosos petiscos naturais sem conservantes artificiais",
       price: 15.50,
       category: "Petiscos",
       image: "🦴"

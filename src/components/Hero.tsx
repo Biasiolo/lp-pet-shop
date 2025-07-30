@@ -16,11 +16,11 @@ const Hero = () => {
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${heroImage})` }}
       ></div>
-      <div className="relative z-10 text-center max-w-4xl p-8 rounded-3xl bg-neutral-500/30 backdrop-blur-lg border border-white/20 shadow-xl mx-auto">
-  <h1 className="text-5xl md:text-7xl font-extrabold text-indigo-800 mb-6 drop-shadow-lg">
+      <div className="relative z-10 text-center max-w-4xl p-8 rounded-3xl bg-neutral-200/30 backdrop-blur-lg border border-white/20 shadow-xl mx-auto">
+  <h1 className="text-5xl md:text-7xl font-extrabold text-white mb-6 drop-shadow-lg">
     PET'S PLACE
   </h1>
-  <p className="text-3xl md:text-3xl text-stone-300 font-bold mb-12 drop-shadow-md max-w-3xl mx-auto">
+  <p className="text-3xl md:text-3xl text-neutral-700 font-bold mb-12 drop-shadow-md max-w-3xl mx-auto">
     O melhor cuidado para o seu amigo! 
   </p>
   <p className="text-2xl md:text-2xl text-white font-bold mb-4 drop-shadow-md max-w-4xl mx-auto">
@@ -28,10 +28,10 @@ const Hero = () => {
   </p>
   <div className="flex flex-col sm:flex-row gap-4 justify-center">
     <Button 
-      variant="hero" 
+
       size="lg"
       onClick={() => scrollToSection('agendamento')}
-      className="text-lg text-black px-8 py-4"
+      className="text-lg text-black px-8 py-4 bg-gradient-to-r from-blue-300 to-emerald-400"
     >
       Agendar Banho
     </Button>

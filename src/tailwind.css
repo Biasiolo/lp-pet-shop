@@ -48,7 +48,7 @@ All colors MUST be HSL.
 
     /* Custom Pet Shop Colors */
     --pet-blue: 200 95% 55%;
-    --pet-green: 150 50% 20%;
+    --pet-green: 150 70% 30%;
     --pet-orange: 25 95% 65%;
     --pet-light-blue: 200 80% 90%;
     --pet-light-green: 140 50% 90%;
@@ -130,5 +130,5 @@ All colors MUST be HSL.
 }
 
 body {
-  font-family: 'American Captain', sans-serif;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }

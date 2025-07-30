@@ -6,7 +6,7 @@ const About = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-foreground mb-4">
-            Sobre o Banho Cão
+            Sobre o Pet's Place
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Há mais de 10 anos cuidando dos pets de São José dos Campos com amor, dedicação e profissionalismo.

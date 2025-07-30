@@ -24,7 +24,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 gap-8">
           {/* Informações da Empresa */}
           <div className="space-y-4">
-            <h3 className="text-2xl font-bold text-pet-blue">Banho Cão</h3>
+            <h3 className="text-2xl font-bold text-pet-blue">Pet's Place</h3>
             <p className="text-background/80">
               Cuidando do seu melhor amigo com amor, carinho e profissionalismo há mais de 10 anos em São José dos Campos.
             </p>

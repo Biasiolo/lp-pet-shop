@@ -61,16 +61,7 @@ const Location = () => {
                     </div>
                   </div>
 
-                  <div className="flex items-start gap-3">
-                    <Phone className="w-5 h-5 text-pet-orange mt-1" />
-                    <div>
-                      <h3 className="font-semibold text-foreground">Contato</h3>
-                      <p className="text-muted-foreground">
-                        WhatsApp: (12) 99999-9999<br />
-                        Instagram: @banhocao_sjc
-                      </p>
-                    </div>
-                  </div>
+                  
                 </div>
 
                 <div className="space-y-3">
@@ -124,19 +115,19 @@ const Location = () => {
           </div>
 
           {/* Informações Adicionais */}
-          <Card className="mt-8 bg-muted/50 border-border/50">
-            <CardContent className="p-6">
-              <div className="text-center">
-                <h3 className="text-lg font-semibold text-foreground mb-2">
-                  🚗 Facilidades de Acesso
-                </h3>
-                <p className="text-muted-foreground">
-                  Estacionamento gratuito na frente • Próximo ao centro da cidade • 
-                  Fácil acesso por transporte público • Localização segura e bem sinalizada
-                </p>
-              </div>
-            </CardContent>
-          </Card>
+          <Card className="mt-8 bg-neutral-200/30 backdrop-blur-lg border border-white/30 shadow-xl">
+  <CardContent className="p-6">
+    <div className="text-center">
+      <h3 className="text-lg font-semibold text-neutral-700 mb-2 drop-shadow">
+        🚗 Facilidades de Acesso
+      </h3>
+      <p className="text-neutral-600 drop-shadow-sm">
+        Estacionamento gratuito na frente • Próximo ao centro da cidade • 
+        Fácil acesso por transporte público • Localização segura e bem sinalizada
+      </p>
+    </div>
+  </CardContent>
+</Card>
         </div>
       </div>
     </section>
