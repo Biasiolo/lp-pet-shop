@@ -7,7 +7,7 @@ const Services = () => {
     {
       icon: Droplets,
       title: "Banho Completo",
-      description: "Banho com shampoo premium, condicionador e secagem profissional",
+      description: "Banho com produtos premium e secagem",
       price: "R$ 35 - R$ 85",
       details: "Inclui limpeza de ouvidos e corte de unhas"
     },
