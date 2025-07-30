@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Plus, Minus, ShoppingCart } from "lucide-react";
+import { Plus, Minus, ShoppingCart, Trash2 } from "lucide-react";
 
 interface Product {
   id: number;
@@ -76,6 +76,10 @@ const Products = () => {
       }
       return { ...prev, [productId]: newQuantity };
     });
+  };
+
+  const clearCart = () => {
+    setCart({});
   };
 
   const sendWhatsAppOrder = () => {
@@ -172,14 +176,24 @@ const Products = () => {
                 Total: R$ {getTotalPrice().toFixed(2)}
               </p>
             </div>
-            <Button 
-              variant="whatsapp" 
-              onClick={sendWhatsAppOrder}
-              className="w-full"
-            >
-              <ShoppingCart className="w-4 h-4 mr-2" />
-              Finalizar Pedido
-            </Button>
+            <div className="flex gap-2">
+              <Button 
+                variant="whatsapp" 
+                onClick={sendWhatsAppOrder}
+                className="flex-1"
+              >
+                <ShoppingCart className="w-4 h-4 mr-2" />
+                Finalizar Pedido
+              </Button>
+              <Button 
+                variant="outline" 
+                onClick={clearCart}
+                className="px-3"
+                title="Limpar carrinho"
+              >
+                <Trash2 className="w-4 h-4" />
+              </Button>
+            </div>
           </div>
         )}
       </div>
